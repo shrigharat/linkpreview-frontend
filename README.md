@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A website where the user can enter the link and get back all the metadata eg: Title, Thumbnail/Favicon, Description, and the URL attached to a well-designed User Interface.
 
 ## Available Scripts
 
