@@ -1,0 +1,25 @@
+.loader-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.loader-comp {
+  width: 25px;
+  height: 25px;
+  border: 6px solid var(--foreground);
+  border-radius: 50%;
+  border-top: 6px solid var(--alt-foreground);
+  animation: spin 1s ease infinite forwards;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0);
+    } 
+    to{
+        transform: rotate(360deg);
+    }
+}
+

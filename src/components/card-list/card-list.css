@@ -1,0 +1,15 @@
+.card-list{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2rem;
+}
+
+.no-results{
+    color: var(--body-text);
+}

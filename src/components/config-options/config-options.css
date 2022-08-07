@@ -1,0 +1,94 @@
+.config-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 500px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: var(--body-text);
+}
+
+.config-wrapper {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--body-text);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.headline{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.config-title {
+  cursor: pointer;
+  padding: .4rem;
+  border-radius: 4px;
+  transition: background-color .4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.config-title:hover {
+  background-color: var(--foreground);
+}
+.config-title.active {
+  background-color: var(--foreground);
+}
+
+.config-title span{
+    transition: transform .4s ease;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.config-button {
+  padding: 0.4rem 0.8rem;
+  background-color: var(--alt-foreground);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.config-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.tooltip{
+  position: relative;
+}
+
+.tooltip:hover .tooltip-body{
+  display: block;
+}
+
+.tooltip .tooltip-body{
+  position: absolute;
+  display: none;
+  top: 28px;
+  right: 0;
+  background-color: rgba(0,0,0,.9);
+  padding: .5rem;
+  border-radius: 4px;
+  width: 240px;
+}
+
+@media screen and (max-width: 600px) {
+    .config-container{
+        min-width: 90% !important;
+    }
+}
